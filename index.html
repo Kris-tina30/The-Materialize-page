@@ -11,64 +11,128 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Food blog</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+
+  <body style="margin: 25px">
     <header>
-        <nav class="sidenav-trigger">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo">Logo</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-              </ul>
-            </div>
-          </nav>
-        
-          <ul class="sidenav" id="mobile-demo">
+      <nav class="sidenav-trigger purple lighten-4 z-depth-5">
+        <div class="nav-wrapper">
+          <a style="padding-left: 20px" href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">Javascript</a></li>
             <li><a href="mobile.html">Mobile</a></li>
           </ul>
-    <main>
-      <ul class="collapsible">
-        <li class="active">
-          <div class="collapsible-header">
-            <i class="material-icons">filter_drama</i>First
-          </div>
-          <div class="collapsible-body">
-            <span>Lorem ipsum dolor sit amet.</span>
-          </div>
-        </li>
-        <li class="active">
-          <div class="collapsible-header">
-            <i class="material-icons">place</i>Second
-          </div>
-          <div class="collapsible-body">
-            <span>Lorem ipsum dolor sit amet.</span>
-          </div>
-        </li>
-        <li class="active">
-          <div class="collapsible-header">
-            <i class="material-icons">whatshot</i>Third
-          </div>
-          <div class="collapsible-body">
-            <span>Lorem ipsum dolor sit amet.</span>
-          </div>
-        </li>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sign In</a></li>
+        <li><a href="badges.html">Sign Up</a></li>
+        <li><a href="collapsible.html">Contacts</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
       </ul>
-      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-        <i class="material-icons right">send</i>
-      </button>
-      <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+    </header>
+    <main>
+      <div class="row">
+        <div class="col s6">
+          <table class="responsive-table striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="center-align">
+            <a
+              class="waves-effect waves-light btn-large purple lighten-4 z-depth-5"
+              >Sign in</a
+            >
+            <a
+              class="waves-effect waves-light btn-small purple lighten-4 z-depth-5"
+              ><i class="material-icons left">cloud</i>Sign up</a
+            >
+            <a
+              class="waves-effect waves-light btn-small purple lighten-4 z-depth-5"
+              ><i class="material-icons right">cloud</i>Submit</a
+            >
+          </div>
+        </div>
+
+        <div class="col s6">
+          <table class="responsive-table striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+              </tr>
+              <tr>
+                <td>Alan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+              </tr>
+              <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="center-align">
+            <a
+              class="waves-effect waves-light btn-small purple lighten-4 z-depth-5"
+              >Sign in</a
+            >
+            <a
+              class="waves-effect waves-light btn-small purple lighten-4 z-depth-5"
+              ><i class="material-icons left">cloud</i>Sign up</a
+            >
+            <a
+              class="waves-effect waves-light btn-small purple lighten-4 z-depth-5"
+              ><i class="material-icons right">cloud</i>Submit</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
     <script src="./sidenav.js"></script>
     <script src="./collapse.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
   </body>
 </html>
